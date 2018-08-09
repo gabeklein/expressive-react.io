@@ -1,0 +1,31 @@
+{
+  "presets": [
+    [
+      "@babel/env",
+      {
+        "targets": {
+          "node": "8.2.1"
+        },
+        "modules": false
+      }
+    ],
+    "@babel/react",
+    "@expressive-react/next"
+  ],
+  "plugins": [
+    "@babel/plugin-proposal-object-rest-spread",
+    "@babel/plugin-proposal-class-properties",
+    ["@babel/plugin-proposal-decorators", {
+      "legacy": true
+    }],
+    ["module-resolver", {
+        "root": [ "./" ],
+        "cwd": "babelrc",
+        "alias": {
+          "common": "./common",
+          "lib": "./lib"
+        }
+      }
+    ]
+  ]
+}
