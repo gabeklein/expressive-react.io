@@ -30,7 +30,7 @@ export default () => do {
                 Elem('span') > "Hello React!"
         }
         CodeBlock.expressive, do {
-            Comment `import is automagic. 🙌`;
+            Comment `imports are automagic. 🙌`;
             br;
             Const `Element` >> Do >> Templ('span', `Hello Expressive!`)
         }

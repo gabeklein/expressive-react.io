@@ -2,7 +2,7 @@
 import { png } from "@termtm/static";
 
 export default () => do {
-    height: 60, vh;
+    height: 100, vh;
     flexAlign: center;
     fontFamily: roboto
     color: 0x888
@@ -70,8 +70,8 @@ export default () => do {
         `
         links, do {
             Link `Github`, "https://github.com/gabeklein/expressive-react"
-            Link `Learn more`, "/learn"
-            Link `Get it`, "/get-started"
+            Link `Documentation`, "/docs"
+            Link `Install`, "/get-started"
         }
     }
 }

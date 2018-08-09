@@ -17,7 +17,7 @@ function InitScrollMagic(){
     }
 }
 
-export default ({ title = "Expressive App", scrollmagic = false }) => do {
+export default ({ title = "Expressive React", scrollmagic = false }) => do {
     Header, do {
         html-title > title;
         meta(
@@ -38,36 +38,6 @@ export default ({ title = "Expressive App", scrollmagic = false }) => do {
     }
 
     Style(global) `
-        @font-face {
-            font-family: 'Nexa';
-            src: url(${CDN}/css/Nexa-Bold.otf);
-            font-weight: 600;
-        }
-
-        @font-face {
-            font-family: 'Nexa';
-            src: url(${CDN}/css/Nexa-Regular.otf);
-            font-weight: 500;
-        }
-
-        @font-face {
-            font-family: 'Nexa';
-            src: url(${CDN}/css/Nexa-Book.ttf);
-            font-weight: 400;
-        }
-
-        @font-face {
-            font-family: 'Nexa';
-            src: url(${CDN}/css/Nexa-Light.otf);
-            font-weight: 300;
-        }
-
-        @font-face {
-            font-family: 'Nexa';
-            src: url(${CDN}/css/Nexa-Thin.ttf);
-            font-weight: 200;
-        }
-
         html {
             height: 100%;
             box-sizing: border-box;
